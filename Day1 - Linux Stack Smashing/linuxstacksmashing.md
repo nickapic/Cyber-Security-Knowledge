@@ -2,7 +2,9 @@
 
 Resources used :
 
-INE : www.ine.com : Exploit Development Student Course  
+INE : www.ine.com : Exploit Development Student Course : https://ine.com/pages/cybersecurity
+PinkDraconian  on Youtube : https://www.youtube.com/watch?v=W5dVsa3__N4&t
+Hackthebox Academy : https://academy.hackthebox.eu/module/31
 
 GDB is a tool we use to view the created binary on the assembler lever.
 
