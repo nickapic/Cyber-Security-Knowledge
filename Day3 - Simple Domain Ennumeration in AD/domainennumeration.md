@@ -44,15 +44,52 @@ Get-DomainPolicy
 # To get users in the current domain
 Get-NetUser 
 Get-NetUser -Filter Username # Get informaton about specific user
+# Get Properties of allusers in current domain
+Get-UserProperty
 # To Get Group in the Domain
 Get-NetGroup 
 Get-NetGroup -Domain <domain> # To get group info about specific domain
 Get-NetGroup -FullData # To get all data about Groups
 Get-NetGroup *somethingyouwannasearch* # To get info about specific group name
+# List of Computers in current domain
+Get-NetComputer 
+Get-NetComputer -FullData # Get all the data 
 # Get Members of a Group
 Get-NetGroupMember -GroupName "NameofGroup" 
 # Get Membership of a Group of a user
 Get-NetGroup -Username "username"
 # Get local groups on a machine
 Get-NetLocalGroup -ComputerName "computername" -ListGroups
-``` 
+# Get Logged users on a computer 
+Get-NetLoggedon -Computer <Computer>
+# Shares on hosts 
+Invoke-ShareFinder -Verbose
+#Find sensitive files on computers in the domain
+Invoke-FileFinder -Verbose 
+# Get all fileservers of the domain
+Get-NetFileServer
+# List of GPO in this domain
+Get-NetGPO 
+Get-NetGPO -Computer <computer> # For a specific computer
+Get-NetGPOGroup
+# Get OU's in a domain 
+Get-NetOU -FullData 
+# Get GPO's on a OU
+Get-NetGPO -GPOname "<GPO from gplink attribute from Get-NetOU>"
+# Get ACLs wiht an object 
+Get-ObjectAcl -SamAccountName username/objectname -ResolveGUIDs
+# Get the ACLs associated with the specified LDAP path to be used for search
+Get-ObjectAcl -ADSpath "LDAP://CN=Domain Admins,CN\=Users,DC=dollarcorp,DC\=moneycorp,DC\=local" -ResolveGUIDs Verbose
+# Searhc Intresting ACL 
+Invoke-ACLScanner -ResolveGUIDs
+# Get All Domain Trusts 
+Get-NetDomainTrust
+# Info about Forest
+Get-NetForest
+# All Domains in Forest
+Get-NetForestDomain
+Get-NetForestCatalog # GC for global catalogs
+```
+
+Methadology : 
+Ennumerate Users, Computers, Domain Administrators, Eneterprise Admins, Shares and see if you can get any sensitvie information and then map the domain and draw it down and then map their trusts and then use ACL Scanners to see if you have any intresting ACLs that you can abuse.
