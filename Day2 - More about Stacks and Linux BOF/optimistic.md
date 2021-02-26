@@ -1,5 +1,8 @@
 ### Optimistic : HTB Challenges : Pwn
 
+```
+Refrences Used : PinkDraconian Video about this topic : https://www.youtube.com/watch?v=MVeRz2ZdSdk 
+```
 Here lets first try to analyze the security features and architecture of the binary.
 
 ```bash

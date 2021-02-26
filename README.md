@@ -5,6 +5,8 @@ The Idea is to learn a new thing and then apply it, by Investing on Day 1 some t
 
 This challenge was inspired from a challenge I found on LinkedIn : https://github.com/harsh-bothra/learn365
 
+**This Challenge is mostly about learning so notes here not all made by knowledge, i use a lot of resources and try to link them, if there are any resources not mentioned please feel free to message me and i will add them**
+
 Day 1 : Basic of Linux Stack Smashing/ Buffer Overflows / Intro to GDB
 
 Day 2 : Practice on HTB and a Challenge from Tenable CTF
