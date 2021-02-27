@@ -54,3 +54,7 @@ ffuf -w /path/to/postdata.txt -X POST -d "username=admin\&password=FUZZ" -u http
 Link to FFUF : https://github.com/ffuf/ffuf and its documentation.
 
 Here is the Link to WFUZZ : https://github.com/xmendez/wfuzz
+
+Here is a Link to another tool called Arjun we can use HTTP parameters with a huge list default dictionary, so it basically tests and plays around with diffrent params.
+
+Link to Arjun : https://github.com/s0md3v/Arjun
