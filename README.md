@@ -14,3 +14,7 @@ Day 2 : Practice on HTB and a Challenge from Tenable CTF
 Day 3: Basic AD Enumeration via Power View and using The AD Module
 
 Day 4 : Privilege Escalation on a basic Level in AD environments
+
+Day 5 : XML External Entity Injection Attacks
+
+Dat 6 : API endpoint ennumeration 
