@@ -36,3 +36,24 @@ https://www.genymotion.com/  : For Linux
 https://www.bignox.com/ : For Windows and Mac
 
 Information Gathering -> Reversing -> Static Analysis -> Dynamic Analysis -> Report
+
+To get some information we can search the app on playstore, and we can see the id of the package when we click on the app we search adn opened.
+
+Now to debug these Apk's for them first we need to download the apk's for this we use a tool called **Android Debug Bridge (ADB)**.
+
+How to extract the apk , For this we can use jadx suite to load a simple APK and look at its Java Code and jadx also has a gui version 
+
+```bash
+jadx -d [path-output-folder] [path-apk-or-dex-file]
+```
+
+We can also use this tool called Dex2Jar which converts apk to jar and then we inspect the Jar file in JD-GUI : http://java-decompiler.github.io/ 
+```bash
+d2j-dex2jar.sh /path/application.apk
+```
+
+Another tool to see the source code in smali is apktool 
+
+```
+apktool d app.apk
+```
