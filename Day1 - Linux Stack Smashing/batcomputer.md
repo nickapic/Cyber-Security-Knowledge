@@ -1,5 +1,7 @@
 ### Batcomputer
 
+Main Resource used : https://www.youtube.com/watch?v=3Snd6A_duSQ : Pink Draconian on Youtube 
+
 GDB output :
 ```bash
 gdb-peda$ r                                                                                                                                                                                          

@@ -1,5 +1,7 @@
 ### Jeeves Hack the Box Challenge : Intro to Binary Exploitation
 
+Main Resource Used : https://www.youtube.com/watch?v=W5dVsa3__N4&t
+
 Lets try to check what the binary is doing and it seems to be a very simple binary just out putting the following  output and in the middle it asks for our name and then displays it with a greeting like so :
 
 ```bash
