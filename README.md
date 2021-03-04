@@ -17,6 +17,14 @@ Day 4 : Privilege Escalation on a basic Level in AD environments
 
 Day 5 : XML External Entity Injection Attacks
 
-Dat 6 : API endpoint enumeration
+Dat 6 : API endpoint Basic Ennumeration
 
-Day 7 : Android Hacking 101 
+Day 7 : Android Hacking Basic Tools
+
+Day 8 : Voltality Forensics
+
+Day 9 : Assembly Language Basics
+
+Day 10 : Report Writing
+
+Day 11 : Sysinternals
