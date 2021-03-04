@@ -21,9 +21,9 @@ optimistic: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically
 ```
 Now lets analyze the binary in Ghidra and as this binary is not striped we can see function names and symbols loading it into Ghidra we see there are two made functions here :
 
-![Ghidra Main Function](./Images/main.png)
+![Ghidra Main Function](main.png)
 
-![Ghidra Initialize Function](./Images/intialize.png)
+![Ghidra Initialize Function](intialize.png)
 
 and in the initialize function we have an alarm function which alarms us after 30 seconds and stops binary but for making our payload we can try patching this function to get the alarm after 255 seconds to give us a lot of time to work with.
 

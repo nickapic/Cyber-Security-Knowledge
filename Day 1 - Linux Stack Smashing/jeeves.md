@@ -12,7 +12,7 @@ Hello a, hope you have a good day!
 
 Now lets analyze the file in Ghidra to see what its actually doing.
 
-![Ghidra Screenshot](./Images/ghidra.png)
+![Ghidra Screenshot](ghidra.png)
 
 Here it seems we need to overwrite the value of the variable i have renamed as variable to overwrite and this machine is using the gets function which is vulnerable to buffer overflow so we can try to overwrite the value to that certain point using the buffer overflow attack but to do lets first lets see if we can overwrite stuff. So transferring my application to gdb and running it with a 100 characters i get a segmentation fault and i can see that i can overwrite the variable :
 
