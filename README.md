@@ -28,3 +28,5 @@ Day 9 : Assembly Language Basics
 Day 10 : Report Writing
 
 Day 11 : Sysinternals
+
+Day 12 : Core Windows Processes
