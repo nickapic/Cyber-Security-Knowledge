@@ -1,4 +1,4 @@
-rSome Basic Things to know :
+Some Basic Things to know :
 
 1. If you hear AD don't think of it as a Domain, think of it as a forest as Microsoft considers that as a Security Boundary and normally if everything works as its intended if a person compromises a domain in a forest its ideally assumed that the other forests are also compromised.
 2. DNS causes a lot of issues in AD.
