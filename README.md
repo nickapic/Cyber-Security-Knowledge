@@ -30,3 +30,11 @@ Day 10 : Report Writing
 Day 11 : Sysinternals
 
 Day 12 : Core Windows Processes
+
+Day 13 : Event Logs
+
+Day 14 : Yara 
+
+Day 15 : ROP Based Buffer Overflows (Basics)
+
+Day 16 : OAuth Basics
