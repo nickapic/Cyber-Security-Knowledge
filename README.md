@@ -9,7 +9,7 @@ This challenge was inspired from a challenge I found on LinkedIn : https://githu
 
 Day 1 : Basic of Linux Stack Smashing/ Buffer Overflows / Intro to GDB
 
-Day 2 : Practice on HTB and a Challenge from Tenable CTF
+Day 2 : Practice on HTB 
 
 Day 3: Basic AD Enumeration via Power View and using The AD Module
 
