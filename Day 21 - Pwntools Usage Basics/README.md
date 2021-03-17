@@ -44,6 +44,15 @@ Here > is what comes before asking for our input
 io.sendlineafter('> ', 'whatyouwannasend')
 ```
 
-ROP Module : 
+p64 , u64 :
 
+p64 is to back an 64-Bit Integer/Addressand you can provide p64 with the following fields - number, endianness, sign
+```
+p64(stack_address)
+```
+u64 is to reverse this effect and unpack the 64bit integer from its packed from
+```
+u64(stack_address)
+```
+ROP Module : 
 This tool can be used to build stacks preety trivially. ## More to be added here later ##
