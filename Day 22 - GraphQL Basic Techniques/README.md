@@ -1,4 +1,7 @@
-Main Resource used : https://tryhackme.com/room/graphql
+Main Resource used : 
+Tryhackme GraphQL Room : https://tryhackme.com/room/graphql
+Hacking GraphQL For Beginners from Farah Hawa : https://www.youtube.com/watch?v=OQCgmftU-Og  
+
 
 GraphQL is a query language and way to interact with APIs just like REST.
 
@@ -61,3 +64,18 @@ So basically we can gain a lot of information without even fuzzing endpoints or 
 All the types defined in schema method are documented through the `__schema object` . So we can get all info about types from here. And then to know about types we can use the field `types`, then we can search with the fields we want.
 
 Then we can use \_type to build objects and use some param to specify which type we want more information on.
+
+
+To get schemas and information about a Graphql api we can use : 
+```javascript 
+query Introspection{
+  __schema{
+  types{
+    name
+    description
+    }
+  } 
+}
+```
+
+and a great extension to inspect and edit these GraphQL queries in Burp suite is InQL 
