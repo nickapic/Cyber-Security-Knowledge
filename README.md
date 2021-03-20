@@ -46,3 +46,6 @@ Day 20 : File Transfers
 Day 21 : Pwntools Usage Basics
 
 Day 22 : GraphQL Basics 
+
+Day 23-24 : HTB BattleGrounds Tournament and Prep  
+
