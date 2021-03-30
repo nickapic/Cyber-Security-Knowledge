@@ -1,5 +1,6 @@
 # Cyber Security Knowledge
- A Project where i try to learn something new every 2 days, 1 day for learning and the next day for applying the knowledge and this is a place to track it.
+
+A Project where i try to learn something new every 2 days, 1 day for learning and the next day for applying the knowledge and this is a place to track it.
 
 The Idea is to learn a new thing and then apply it, by Investing on Day 1 some time to research about the subject and then on Day 2 apply that knowledge onto a platform so for example doing a HTB Challenge, or do a Port Swigger Academy lab etc.
 
@@ -9,7 +10,7 @@ This challenge was inspired from a challenge I found on LinkedIn : https://githu
 
 Day 1 : Basic of Linux Stack Smashing/ Buffer Overflows / Intro to GDB
 
-Day 2 : Practice on HTB 
+Day 2 : Practice on HTB
 
 Day 3: Basic AD Enumeration via Power View and using The AD Module
 
@@ -33,7 +34,7 @@ Day 12 : Core Windows Processes
 
 Day 13 : Event Logs
 
-Day 14 : Yara 
+Day 14 : Yara
 
 Day 15 : ROP Based Buffer Overflows (Basics)
 
@@ -45,7 +46,8 @@ Day 20 : File Transfers
 
 Day 21 : Pwntools Usage Basics
 
-Day 22 : GraphQL Basics 
+Day 22 : GraphQL Basics
 
-Day 23-24 : HTB BattleGrounds Tournament and Prep  
+Break : HTB BattleGrounds Tournament and Univesity Studies
 
+Day 23 : Bash Scripting and Linux commands
