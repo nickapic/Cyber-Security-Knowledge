@@ -51,3 +51,10 @@ Day 22 : GraphQL Basics
 Break : HTB BattleGrounds Tournament and Univesity Studies
 
 Day 23 : Bash Scripting and Linux commands
+
+Day 24 : Powershell Basics
+
+Break.
+
+Day 25 : x64 Basic Linux Buffer Overflows (No Protections)
+
