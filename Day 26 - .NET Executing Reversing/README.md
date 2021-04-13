@@ -39,3 +39,5 @@ Here we can now just run the program and use this number and get the flag easy p
 P.S. decompyling and modyifying the C# program's if statement to avoid the condition wont work here as its gonna give us a error in Catch statement as we need the num value to decode the string which has the flag.
 
 ![error](./Images/flag.png)
+
+We can also use breakpoints in dnSpy to see the variables at a certain point and just locally set variables that way soemetimes.
