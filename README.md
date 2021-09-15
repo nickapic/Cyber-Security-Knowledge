@@ -58,3 +58,7 @@ Break.
 
 Day 25 : x64 Basic Linux Buffer Overflows (No Protections)
 
+Day 26: .NET Executing Reversing
+
+Day 27 : x64 Binary Exploitation NX Enables
+
