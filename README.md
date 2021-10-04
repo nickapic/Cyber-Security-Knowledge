@@ -62,3 +62,4 @@ Day 26: .NET Executing Reversing
 
 Day 27 : x64 Binary Exploitation NX Enables
 
+Day 28 : APK Reversing
