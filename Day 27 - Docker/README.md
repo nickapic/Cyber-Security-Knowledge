@@ -36,4 +36,7 @@ To Build :
 `docker image rm alpine:3.4`
 
 To Run : 
-1. To show all running containers : 
+1. To show all running containers :  `docker container ls`
+2. Run a container with an image and name, then expose port 500 externally mapped to a port 80 inside the container : `docker container run --name web -p 3000:80 image:1.0`
+3. List the networks  : `docker network ls`
+4. Stop a running container through SIGTERM : `docker container stop containername` 
