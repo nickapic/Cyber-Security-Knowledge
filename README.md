@@ -8,6 +8,8 @@ This challenge was inspired from a challenge I found on LinkedIn : https://githu
 
 **This Challenge is mostly about learning so notes here not all made by knowledge, i use a lot of resources and try to link them, if there are any resources not mentioned please feel free to message me and i will add them**
 
+**Going continue the challenge again after a bit of a break but still, also i saw that most of the categories have weak information atleast till day 28 so will be revamping and adding more information to them later as well**
+
 Day 1 : Basic of Linux Stack Smashing/ Buffer Overflows / Intro to GDB
 
 Day 2 : Practice on HTB
@@ -60,6 +62,4 @@ Day 25 : x64 Basic Linux Buffer Overflows (No Protections)
 
 Day 26: .NET Executing Reversing
 
-Day 27 : x64 Binary Exploitation NX Enables
 
-Day 28 : APK Reversing
